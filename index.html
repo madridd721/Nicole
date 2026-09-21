@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#18231e">
+    <title>Para Nicole | Un pequeño detalle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <main class="container">
+        <section id="intro" class="intro-screen" aria-labelledby="name">
+            <div class="sunflower" aria-hidden="true">
+                <div class="petals">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="center-flower"></div>
+                <div class="stem"></div>
+            </div>
+
+            <p class="small-text">Tengo algo para vos...</p>
+            <h1 id="name">Nicole <span aria-hidden="true">🌻</span></h1>
+            <p id="subtitle">Para alguien muy especial</p>
+            <button id="openButton" class="primary-button" type="button">Abrir <span aria-hidden="true">→</span></button>
+        </section>
+
+        <section id="mainContent" class="main-content hidden" aria-labelledby="mainTitle">
+            <div class="flower-top" aria-hidden="true">🌻</div>
+            <p class="eyebrow">Un detalle hecho con cariño</p>
+            <h2 id="mainTitle">Para alguien muy especial</h2>
+            <div class="phrase-box" aria-live="polite"><p id="phrase"></p></div>
+            <button id="letterButton" class="primary-button" type="button">Tengo algo que decirte <span aria-hidden="true">↗</span></button>
+            <button id="musicButton" class="music-button" type="button" aria-pressed="false">♫ Activar música</button>
+            <button id="backButton" class="secondary-button" type="button">Volver</button>
+        </section>
+    </main>
+
+    <div id="letterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+        <div class="modal-content">
+            <button id="closeModal" class="close-button" type="button" aria-label="Cerrar carta">×</button>
+            <div class="modal-flower" aria-hidden="true">🌻</div>
+            <p class="eyebrow">Con cariño</p>
+            <h2 id="letterTitle">Para vos, Nicole</h2>
+            <div class="letter">
+                <p>No quiero que este detalle sea una forma de pedirte nada. No quiero que sintás que tenés que responderme algo, ni que detrás de este pequeño detalle hay una expectativa. Solo quería tener un pequeño gesto con vos y recordarte que hay alguien que se alegra de verte sonreír, que piensa en vos y que genuinamente desea verte bien.</p>
+                <p>Después de todo lo que hemos vivido, de todo lo que pasó y de todo lo que todavía estamos aprendiendo, hay algo que para mí sigue siendo muy bonito: que sigás siendo alguien especial para mí.</p>
+                <p>Y aunque no sé qué nos tenga preparado la vida, sí sé que me gusta estar presente en ella. Sin prisas, sin exigirte respuestas y sin intentar cambiar lo que sentís.</p>
+                <p>Solo quiero que este detalle te recuerde que, incluso en medio de todo lo que estás viviendo, merecés lo más bonito del mundo, merecés sonreír y merecés sentirte querida.</p>
+                <p class="final-message">Espero que te guste. Te quiero mucho.</p>
+                <p class="signature">David Madrid</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="ssstik.io_1789963013847.mp3/ssstik.io_1789963013847.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
